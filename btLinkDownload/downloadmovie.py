@@ -19,7 +19,7 @@ def main():
         item = cursor.fetchone()
 
         if not "HDCAM".lower() in item[1].lower() or \
-           not  "-TS"  in item[1]:
+           not  "TS"  in item[1]:
             callDelugeDownlaodOne(item)
 
         #write this item to downloadedlinks
